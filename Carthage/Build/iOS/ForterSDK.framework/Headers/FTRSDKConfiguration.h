@@ -6,8 +6,7 @@
 //  Copyright © 2016 Forter. All rights reserved.
 //
 
-#ifndef FTRSDKConfiguration_h
-#define FTRSDKConfiguration_h
+#pragma once
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -59,5 +58,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-#endif /* FTRSDKConfiguration_h */
+/* FTRSDKConfiguration_h */

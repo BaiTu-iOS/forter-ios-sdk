@@ -6,8 +6,7 @@
 //  Copyright © 2016 Forter. All rights reserved.
 //
 
-#ifndef ForterSDK_h
-#define ForterSDK_h
+#pragma once
 
 #import <Foundation/Foundation.h>
 #import "FTRSDKPublicConstants.h"
@@ -169,6 +168,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)getSDKVersionSignature;
 
 /**
+ Enable developer logs for integration testing
+ 
+ */
++ (void)setDevLogsEnabled:(BOOL)enabled;
+
+/**
  Trigger immediate submission of all pending track data to our servers.
  
  @warning Use this method only if your app uses a custom SDK configuration.
@@ -177,5 +182,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-#endif /* ForterSDK_h */
+/* ForterSDK_h */

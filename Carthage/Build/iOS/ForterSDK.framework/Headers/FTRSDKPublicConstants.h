@@ -6,13 +6,12 @@
 //  Copyright © 2016 Forter. All rights reserved.
 //
 
-#ifndef FTRSDKPublicConstants_h
-#define FTRSDKPublicConstants_h
+#pragma once
 
-// ForterSDKV1.4.237
-#define FTR_SDK_VERSION_STRING_NAME @"1.4.2"
-#define FTR_SDK_VERSION_STRING_BUILD @"37"
-#define FTR_SDK_VERSION_SIGNATURE @"2cadb430078dc348f9b697596b509814"
+// ForterSDKV1.4.440
+#define FTR_SDK_VERSION_STRING_NAME @"1.4.4"
+#define FTR_SDK_VERSION_STRING_BUILD @"40"
+#define FTR_SDK_VERSION_SIGNATURE @"396e8376221e8aaf9ab06b865f6cf6e0"
 
 #define FTR_SDK_LOG_LEVEL_OFF 0
 #define FTR_SDK_LOG_LEVEL_ERROR 1
@@ -75,5 +74,4 @@ typedef NS_ENUM(NSUInteger, FTRSDKAccountIdType) {
   FTRSDKAccountIdTypeOther
 };
 
-
-#endif /* FTRSDKPublicConstants_h */
+/* FTRSDKPublicConstants_h */

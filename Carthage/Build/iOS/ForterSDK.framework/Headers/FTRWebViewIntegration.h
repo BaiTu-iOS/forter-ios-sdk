@@ -6,12 +6,11 @@
 //  Copyright © 2017 Forter. All rights reserved.
 //
 
-#ifndef FTRWebViewIntegration_h
-#define FTRWebViewIntegration_h
+#pragma once
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface FTRWebViewIntegration : NSObject
 +(NSString *)getJSCodeForEval;
 @end
-
-#endif /* FTRUIWebViewIntegration_h */
+NS_ASSUME_NONNULL_END

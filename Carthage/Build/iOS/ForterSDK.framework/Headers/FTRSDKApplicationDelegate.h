@@ -5,8 +5,7 @@
 //  Created by Or Polaczek on 12/09/2016.
 //  Copyright © 2016 Forter. All rights reserved.
 //
-#ifndef FTRSDKApplicationDelegate_h
-#define FTRSDKApplicationDelegate_h
+#pragma once
 
 #import <UIKit/UIKit.h>
 
@@ -67,4 +66,3 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application;
 
 @end
-#endif
