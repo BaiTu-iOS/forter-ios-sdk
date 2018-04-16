@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => "Commercial", :text => "Forter LTD Copyright 2016" }
   s.author           = { "Or Polaczek" => "or.polaczek@forter.com" }
   s.source           = { :git => "https://bitbucket.org/forter-mobile/forter-ios-sdk.git", :tag => s.version.to_s }
-  s.frameworks 	     = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit', 'CommonCrypto' 
+  s.frameworks 	     = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
 
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
