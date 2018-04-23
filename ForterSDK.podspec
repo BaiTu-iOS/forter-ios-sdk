@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
-  s.ios.vendored_framework = 'Carthage/Build/iOS/ForterSDK.framework'  
+  s.ios.vendored_framework = 'Carthage/Build/iOS/ForterSDK.framework' 
+  s.ios.source_files = 'Carthage/Build/iOS/ForterSDK.framework/Headers/*.h'
   s.ios.public_header_files = 'Carthage/Build/iOS/ForterSDK.framework/Headers/*.h'
     
 end
