@@ -11,10 +11,10 @@ BCSymbolMap Version: 2.0
 _OBJC_IVAR_$_FTREventError._trackType
 _OBJC_IVAR_$_FTREventError._errorData
 _OBJC_IVAR_$_FTREventError._errorMessage
-Apple LLVM version 9.1.0 (clang-902.0.39.1)
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventError.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventError.h
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventError.m
+/Users/vagrant/git/ForterSDK
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventError.h
 -[FTREventLocation toDictionary]
 -[FTREventLocation eventDataDictionary]
 -[FTREventLocation longitude]
@@ -27,8 +27,8 @@ Apple LLVM version 9.1.0 (clang-902.0.39.1)
 _OBJC_IVAR_$_FTREventLocation._longitude
 _OBJC_IVAR_$_FTREventLocation._latitude
 _OBJC_IVAR_$_FTREventLocation._altitude
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventLocation.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventLocation.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventLocation.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventLocation.h
 -[FTREventAppActive toDictionary]
 -[FTREventAppActive eventDataDictionary]
 -[FTREventAppActive cacheKey]
@@ -127,8 +127,8 @@ _OBJC_IVAR_$_FTREventAppActive._deviceUptime
 _OBJC_IVAR_$_FTREventAppActive._userFormatLocalTime
 _OBJC_IVAR_$_FTREventAppActive._normalizedLocalTime
 _OBJC_IVAR_$_FTREventAppActive._isFirstRun
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventAppActive.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventAppActive.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventAppActive.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventAppActive.h
 +[FTREventsManager sharedInstance]
 ___34+[FTREventsManager sharedInstance]_block_invoke
 -[FTREventsManager sendAllEvents]
@@ -152,12 +152,13 @@ _sharedInstance.onceToken
 ___block_descriptor_tmp
 ___block_literal_global
 ___block_descriptor_tmp.177
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventsManager.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventsManager.m
 __destroy_helper_block_
 __copy_helper_block_
 __41-[FTREventsManager triggerAppActiveEvent]_block_invoke
 __34+[FTREventsManager sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/dispatch/once.h
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
 +[FTREventsBuffer sharedInstance]
 ___33+[FTREventsBuffer sharedInstance]_block_invoke
 -[FTREventsBuffer stopProcessingNewEvents]
@@ -217,8 +218,8 @@ ___block_descriptor_tmp.154
 ___block_descriptor_tmp.160
 _OBJC_IVAR_$_FTREventsBuffer._serialEventsQueue
 _OBJC_IVAR_$_FTREventsBuffer._shouldProcessNewEvents
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventsBuffer.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventsBuffer.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventsBuffer.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventsBuffer.h
 __24-[FTREventsBuffer reset]_block_invoke
 __41-[FTREventsBuffer internalSendAllEvents:]_block_invoke.151
 __41-[FTREventsBuffer internalSendAllEvents:]_block_invoke.139
@@ -239,17 +240,17 @@ __33+[FTREventsBuffer sharedInstance]_block_invoke
 +[FTRNetworkUtils getCurrentSSID]
 +[FTRNetworkUtils getCurrentProxyName]
 +[FTRNetworkUtils getActiveNetworkInterfaces]
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRNetworkUtils.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRNetworkUtils.m
 +[FTRProcessedEvent eventWithBaseEvent:]
 -[FTRProcessedEvent baseEvent]
 -[FTRProcessedEvent setBaseEvent:]
 -[FTRProcessedEvent .cxx_destruct]
 _OBJC_IVAR_$_FTRProcessedEvent._baseEvent
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRProcessedEvent.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRProcessedEvent.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRProcessedEvent.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRProcessedEvent.h
 +[FTRInterceptor set:]
 +[FTRInterceptor intercept:]
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRInterceptor.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRInterceptor.m
 +[FTRDeviceUtils generateUserAgent]
 +[FTRDeviceUtils getDeviceAppUID]
 +[FTRDeviceUtils getAvailableKeyboardLanguages]
@@ -264,7 +265,7 @@ _OBJC_IVAR_$_FTRProcessedEvent._baseEvent
 +[FTRDeviceUtils getCurrentAppVersion]
 +[FTRDeviceUtils getLocalTimeInUserFormat]
 +[FTRDeviceUtils getNormalizedLocalTime]
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRDeviceUtils.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRDeviceUtils.m
 +[FTRReachability reachabilityWithHostName:]
 +[FTRReachability reachabilityWithAddress:]
 +[FTRReachability reachabilityForInternetConnection]
@@ -276,7 +277,7 @@ _ReachabilityCallback
 -[FTRReachability connectionRequired]
 -[FTRReachability currentReachabilityStatus]
 _OBJC_IVAR_$_FTRReachability._reachabilityRef
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRReachability.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRReachability.m
 ReachabilityCallback
 +[FTRLogger setLogLevel:]
 +[FTRLogger logLevel]
@@ -291,7 +292,7 @@ ReachabilityCallback
 ___30+[FTRLogger nsLog:logMessage:]_block_invoke
 __logLevel
 __devLogsEnabled
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRLogger.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRLogger.m
 __30+[FTRLogger nsLog:logMessage:]_block_invoke
 +[FTRSDKApplicationDelegate sharedInstance]
 ___43+[FTRSDKApplicationDelegate sharedInstance]_block_invoke
@@ -300,7 +301,7 @@ ___43+[FTRSDKApplicationDelegate sharedInstance]_block_invoke
 -[FTRSDKApplicationDelegate application:didFinishLaunchingWithOptions:]
 -[FTRSDKApplicationDelegate applicationDidBecomeActive:]
 -[FTRSDKApplicationDelegate applicationDidEnterBackground:]
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRSDKApplicationDelegate.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRSDKApplicationDelegate.m
 __43+[FTRSDKApplicationDelegate sharedInstance]_block_invoke
 -[ForterSDK runIfValid:]
 ___24-[ForterSDK runIfValid:]_block_invoke
@@ -391,7 +392,7 @@ ___block_descriptor_tmp.112
 ___block_literal_global.113
 _OBJC_IVAR_$_ForterSDK._serialRequestQueue
 _OBJC_IVAR_$_ForterSDK._sdkState
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/ForterSDK.m
+/Users/vagrant/git/ForterSDK/ForterSDK/ForterSDK.m
 __32-[ForterSDK sendAppActiveEvents]_block_invoke
 __20-[ForterSDK destroy]_block_invoke
 __30-[ForterSDK triggerSubmission]_block_invoke
@@ -422,8 +423,8 @@ __24-[ForterSDK runIfValid:]_block_invoke
 _OBJC_IVAR_$_FTREventTrack._trackType
 _OBJC_IVAR_$_FTREventTrack._trackData
 _OBJC_IVAR_$_FTREventTrack._trackString
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventTrack.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventTrack.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventTrack.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventTrack.h
 -[FTREventBase init]
 -[FTREventBase eventDataDictionary]
 -[FTREventBase toDictionary]
@@ -452,10 +453,10 @@ l_OBJC_PROTOCOL_$_NSObject
 l_OBJC_LABEL_PROTOCOL_$_NSObject
 l_OBJC_PROTOCOL_$_FTREventBase
 l_OBJC_LABEL_PROTOCOL_$_FTREventBase
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventBase.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventBase.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventBase.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventBase.h
 +[FTRWebViewIntegration getJSCodeForEval]
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRWebViewIntegration.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRWebViewIntegration.m
 +[FTRUtils ftrAccountIdTypeToString:]
 +[FTRUtils ftrNavigationTypeToString:]
 +[FTRUtils ftrActionTypeToString:]
@@ -475,7 +476,7 @@ l_OBJC_LABEL_PROTOCOL_$_FTREventBase
 +[FTRUtils base64ToData:]
 +[FTRUtils base64ToString:]
 +[FTRUtils base64ToHexString:]
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRUtils.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRUtils.m
 -[ForterSDKImpl init]
 +[ForterSDKImpl sharedInstance]
 ___31+[ForterSDKImpl sharedInstance]_block_invoke
@@ -508,13 +509,13 @@ _OBJC_IVAR_$_ForterSDKImpl._initiationTimestamp
 _sharedInstance.sImplInstance
 _OBJC_IVAR_$_ForterSDKImpl._sdkConfiguration
 _OBJC_IVAR_$_ForterSDKImpl._ftrReachability
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/ForterSDKImpl.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/ForterSDKImpl.h
+/Users/vagrant/git/ForterSDK/ForterSDK/ForterSDKImpl.m
+/Users/vagrant/git/ForterSDK/ForterSDK/ForterSDKImpl.h
 __31+[ForterSDKImpl sharedInstance]_block_invoke
 +[FTRLZString compressLZ:bitsPerChar:withWrapper:]
 +[FTRLZString compressToUriSafe:]
 ___33+[FTRLZString compressToUriSafe:]_block_invoke
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRLZString.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRLZString.m
 __33+[FTRLZString compressToUriSafe:]_block_invoke
 -[FTREventNavigation toDictionary]
 -[FTREventNavigation eventDataDictionary]
@@ -534,8 +535,8 @@ _OBJC_IVAR_$_FTREventNavigation._pageTitle
 _OBJC_IVAR_$_FTREventNavigation._pageId
 _OBJC_IVAR_$_FTREventNavigation._pageCategory
 _OBJC_IVAR_$_FTREventNavigation._otherInfo
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventNavigation.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventNavigation.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventNavigation.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventNavigation.h
 -[FTREventNetwork toDictionary]
 -[FTREventNetwork eventDataDictionary]
 -[FTREventNetwork cacheKey]
@@ -553,8 +554,8 @@ _OBJC_IVAR_$_FTREventNetwork._currentNetworkType
 _OBJC_IVAR_$_FTREventNetwork._currentSSID
 _OBJC_IVAR_$_FTREventNetwork._proxy
 _OBJC_IVAR_$_FTREventNetwork._networkInterfaces
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventNetwork.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTREventNetwork.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventNetwork.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventNetwork.h
 -[FTRSDKConfiguration init]
 -[FTRSDKConfiguration copyWithZone:]
 -[FTRSDKConfiguration siteId]
@@ -620,11 +621,11 @@ _OBJC_IVAR_$_FTRSDKConfiguration._referralUrl
 _OBJC_IVAR_$_FTRSDKConfiguration._defaultUserAgent
 l_OBJC_PROTOCOL_$_NSCopying
 l_OBJC_LABEL_PROTOCOL_$_NSCopying
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRSDKConfiguration.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRSDKConfiguration.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRSDKConfiguration.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRSDKConfiguration.h
 -[FTRConfigurationFetcher fetch:userId:]
 -[FTRConfigurationFetcher fetch:userId:retryCount:]
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRConfigurationFetcher.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRConfigurationFetcher.m
 +[FTRNetworkClient sharedInstance]
 ___34+[FTRNetworkClient sharedInstance]_block_invoke
 -[FTRNetworkClient startUrlSession]
@@ -662,8 +663,8 @@ ___block_descriptor_tmp.200
 ___block_descriptor_tmp.249
 ___block_literal_global.250
 _OBJC_IVAR_$_FTRNetworkClient._serialNetworkQueue
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRNetworkClient.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRNetworkClient.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRNetworkClient.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRNetworkClient.h
 __41-[FTRNetworkClient sendAnalyticsRequest:]_block_invoke
 __47-[FTRNetworkClient internalSendEventToNetwork:]_block_invoke_2
 __47-[FTRNetworkClient internalSendEventToNetwork:]_block_invoke
@@ -680,10 +681,10 @@ ___31+[FTRAccountIds sharedInstance]_block_invoke
 -[FTRAccountIds setAccountIds:]
 -[FTRAccountIds .cxx_destruct]
 _OBJC_IVAR_$_FTRAccountIds._accountIds
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRAccountIds.m
-/Users/orpolaczek/dev/mobile-sample-app-ios/ForterSDK/ForterSDK/FTRAccountIds.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRAccountIds.m
+/Users/vagrant/git/ForterSDK/ForterSDK/FTRAccountIds.h
 __31+[FTRAccountIds sharedInstance]_block_invoke
-/Users/orpolaczek/Library/Developer/Xcode/DerivedData/ForterSDK-cepukefolzszrcbgqziunxsvyhrv/Build/Intermediates.noindex/ForterSDK.build/Release-iphoneos/ForterSDK.build/DerivedSources/ForterSDK_vers.c
+/Users/vagrant/Library/Developer/Xcode/DerivedData/ForterSDK-fjayunxlraeyumctninbvbdqaulu/Build/Intermediates.noindex/ArchiveIntermediates/ForterSDK/IntermediateBuildFilesPath/ForterSDK.build/Release-iphoneos/ForterSDK.build/DerivedSources/ForterSDK_vers.c
 __ZL15__ARCLite__loadv
 __ZL30add_image_hook_autoreleasepoolPK11mach_headerl
 __ZL34__arclite_objc_autoreleasePoolPushv
@@ -710,6 +711,7 @@ __ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
 __ZL26__arclite_objc_storeStrongPP11objc_objectS0_
 __ZL22add_image_hook_swiftV1PK11mach_headerl
 __ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
 __ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
 __ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
 __ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
@@ -788,15 +790,16 @@ __ZL25original_protocol_getName
 __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
-Apple LLVM version 9.1.0 (clang-902.0.35)
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -mlinker-version=351.8 -march=armv7a
+Apple LLVM version 9.0.0 (clang-900.0.39)
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -mlinker-version=305 -march=armv7a
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67
 fixStringForCoreData
 cxxConstruct
 arclite_uninitialized_function
 scanMangledField
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.Internal.sdk/usr/include/_ctype.h
+isdigit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk/usr/include/ctype.h
 __isctype
 demangledName
 copySwiftV1DemangledName
@@ -838,6 +841,7 @@ __arclite_NSKKMS_fastIndexForKnownKey
 __arclite_NSManagedObject_allocBatch
 __arclite_NSManagedObject_allocWithEntity
 __arclite_NSManagedObject_init
+replaceMethod
 __arclite_NSUndoManagerProxy_isKindOfClass
 add_image_hook_swiftV1
 patch_t<const char **(const char *, unsigned int *)>
@@ -888,7 +892,6 @@ patch_t<void (void *)>
 patch_t<void *()>
 __ARCLite__load
 install_swiftV1
-replaceMethod
 install_ARC
 install_dict_nil_value
 addOrReplaceMethod
