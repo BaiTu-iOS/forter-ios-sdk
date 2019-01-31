@@ -11,7 +11,7 @@ BCSymbolMap Version: 2.0
 _OBJC_IVAR_$_FTREventError._trackType
 _OBJC_IVAR_$_FTREventError._errorData
 _OBJC_IVAR_$_FTREventError._errorMessage
-Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
 /Users/vagrant/git/ForterSDK/ForterSDK/FTREventError.m
 /Users/vagrant/git/ForterSDK
 /Users/vagrant/git/ForterSDK/ForterSDK/FTREventError.h
@@ -157,8 +157,7 @@ __destroy_helper_block_
 __copy_helper_block_
 __41-[FTREventsManager triggerAppActiveEvent]_block_invoke
 __34+[FTREventsManager sharedInstance]_block_invoke
-_dispatch_once
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/dispatch/once.h
 +[FTREventsBuffer sharedInstance]
 ___33+[FTREventsBuffer sharedInstance]_block_invoke
 -[FTREventsBuffer stopProcessingNewEvents]
@@ -240,6 +239,7 @@ __33+[FTREventsBuffer sharedInstance]_block_invoke
 +[FTRNetworkUtils getCurrentSSID]
 +[FTRNetworkUtils getCurrentProxyName]
 +[FTRNetworkUtils getActiveNetworkInterfaces]
+___clang_at_available_requires_core_foundation_framework
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRNetworkUtils.m
 +[FTRProcessedEvent eventWithBaseEvent:]
 -[FTRProcessedEvent baseEvent]
@@ -625,7 +625,13 @@ l_OBJC_LABEL_PROTOCOL_$_NSCopying
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRSDKConfiguration.h
 -[FTRConfigurationFetcher fetch:userId:]
 -[FTRConfigurationFetcher fetch:userId:retryCount:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___51-[FTRConfigurationFetcher fetch:userId:retryCount:]_block_invoke
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRConfigurationFetcher.m
+__51-[FTRConfigurationFetcher fetch:userId:retryCount:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
 +[FTRNetworkClient sharedInstance]
 ___34+[FTRNetworkClient sharedInstance]_block_invoke
 -[FTRNetworkClient startUrlSession]
@@ -640,8 +646,6 @@ ___34+[FTRNetworkClient sharedInstance]_block_invoke
 -[FTRNetworkClient sendEventToNetwork:]
 ___39-[FTRNetworkClient sendEventToNetwork:]_block_invoke
 -[FTRNetworkClient internalSendEventToNetwork:]
-___Block_byref_object_copy_
-___Block_byref_object_dispose_
 ___47-[FTRNetworkClient internalSendEventToNetwork:]_block_invoke
 ___47-[FTRNetworkClient internalSendEventToNetwork:]_block_invoke_2
 ___copy_helper_block_.194
@@ -668,8 +672,6 @@ _OBJC_IVAR_$_FTRNetworkClient._serialNetworkQueue
 __41-[FTRNetworkClient sendAnalyticsRequest:]_block_invoke
 __47-[FTRNetworkClient internalSendEventToNetwork:]_block_invoke_2
 __47-[FTRNetworkClient internalSendEventToNetwork:]_block_invoke
-__Block_byref_object_dispose_
-__Block_byref_object_copy_
 __39-[FTRNetworkClient sendEventToNetwork:]_block_invoke
 __34+[FTRNetworkClient sharedInstance]_block_invoke
 +[FTRAccountIds sharedInstance]
@@ -711,7 +713,6 @@ __ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
 __ZL26__arclite_objc_storeStrongPP11objc_objectS0_
 __ZL22add_image_hook_swiftV1PK11mach_headerl
 __ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
-__ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
 __ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
 __ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
 __ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
@@ -790,16 +791,14 @@ __ZL25original_protocol_getName
 __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
-Apple LLVM version 9.0.0 (clang-900.0.39)
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.o -mlinker-version=305 -march=armv7s
-/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm
-/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.o -mlinker-version=409.12 -march=armv7s
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70
 fixStringForCoreData
 cxxConstruct
 arclite_uninitialized_function
 scanMangledField
-isdigit
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk/usr/include/ctype.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/usr/include/_ctype.h
 __isctype
 demangledName
 copySwiftV1DemangledName
@@ -841,7 +840,6 @@ __arclite_NSKKMS_fastIndexForKnownKey
 __arclite_NSManagedObject_allocBatch
 __arclite_NSManagedObject_allocWithEntity
 __arclite_NSManagedObject_init
-replaceMethod
 __arclite_NSUndoManagerProxy_isKindOfClass
 add_image_hook_swiftV1
 patch_t<const char **(const char *, unsigned int *)>
@@ -892,6 +890,7 @@ patch_t<void (void *)>
 patch_t<void *()>
 __ARCLite__load
 install_swiftV1
+replaceMethod
 install_ARC
 install_dict_nil_value
 addOrReplaceMethod
