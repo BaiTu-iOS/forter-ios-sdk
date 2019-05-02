@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "v2.0.0-rc1",
+  "commitish" : "v2.0.0-rc3",
   "iOS" : [
     {
       "name" : "ForterSDK",
-      "hash" : "eaba3e6b98f0658edba8efb339e636da4e8527102e7aed550fbb670a1a4e2c74"
+      "hash" : "7525e9da7b39e8f05c6de6544b2f75d5a5a0e3bd4216afeacfcfb85a3bbf41dc"
     }
   ]
 }
