@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ForterSDK"
-  s.version          = "2.0.0-rc1"
+  s.version          = "1.5.0"
   s.summary          = "ForterSDK - Forter iOS SDK"
   s.description      = <<-DESC
                         Forter's iOS Fraud Prevention SDK 
