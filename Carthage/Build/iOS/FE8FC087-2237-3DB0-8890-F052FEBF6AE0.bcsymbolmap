@@ -31,15 +31,12 @@ _OBJC_IVAR_$_FTREventLocation._altitude
 /Users/vagrant/git/ForterSDK/ForterSDK/FTREventLocation.h
 -[FTREventAppActive toDictionary]
 -[FTREventAppActive eventDataDictionary]
--[FTREventAppActive selfPopulateProperties]
 -[FTREventAppActive cacheKey]
 -[FTREventAppActive cacheData]
 -[FTREventAppActive deviceUID]
 -[FTREventAppActive setDeviceUID:]
 -[FTREventAppActive deviceAppUID]
 -[FTREventAppActive setDeviceAppUID:]
--[FTREventAppActive installationID]
--[FTREventAppActive setInstallationID:]
 -[FTREventAppActive appVer]
 -[FTREventAppActive setAppVer:]
 -[FTREventAppActive locale]
@@ -99,10 +96,8 @@ _OBJC_IVAR_$_FTREventLocation._altitude
 -[FTREventAppActive isFirstRun]
 -[FTREventAppActive setIsFirstRun:]
 -[FTREventAppActive .cxx_destruct]
-_OBJC_IVAR_$_FTREventAppActive.eventData
 _OBJC_IVAR_$_FTREventAppActive._deviceUID
 _OBJC_IVAR_$_FTREventAppActive._deviceAppUID
-_OBJC_IVAR_$_FTREventAppActive._installationID
 _OBJC_IVAR_$_FTREventAppActive._appVer
 _OBJC_IVAR_$_FTREventAppActive._locale
 _OBJC_IVAR_$_FTREventAppActive._networkType
@@ -156,7 +151,7 @@ _sharedInstance.sharedInstance
 _sharedInstance.onceToken
 ___block_descriptor_tmp
 ___block_literal_global
-___block_descriptor_tmp.97
+___block_descriptor_tmp.173
 /Users/vagrant/git/ForterSDK/ForterSDK/FTREventsManager.m
 __destroy_helper_block_
 __copy_helper_block_
@@ -234,33 +229,6 @@ __30-[FTREventsBuffer queueEvent:]_block_invoke
 __48-[FTREventsBuffer scheduleEventBufferSubmission]_block_invoke
 __38-[FTREventsBuffer eventsInBufferCount]_block_invoke
 __33+[FTREventsBuffer sharedInstance]_block_invoke
--[FTRRTConfiguration init]
--[FTRRTConfiguration copyWithZone:]
-+[FTRRTConfiguration initWithServerResponse:]
-+[FTRRTConfiguration initWithRemoteBypassAndConfiguration:]
--[FTRRTConfiguration processSDKState]
--[FTRRTConfiguration getFeatureByName:]
--[FTRRTConfiguration getProcessedSDKConfiguration]
--[FTRRTConfiguration initialSDKConf]
--[FTRRTConfiguration setInitialSDKConf:]
--[FTRRTConfiguration processedSDKConf]
--[FTRRTConfiguration setProcessedSDKConf:]
--[FTRRTConfiguration confArray]
--[FTRRTConfiguration setConfArray:]
--[FTRRTConfiguration bypassRemoteSettings]
--[FTRRTConfiguration setBypassRemoteSettings:]
--[FTRRTConfiguration sdkState]
--[FTRRTConfiguration setSdkState:]
--[FTRRTConfiguration .cxx_destruct]
-_OBJC_IVAR_$_FTRRTConfiguration._initialSDKConf
-_OBJC_IVAR_$_FTRRTConfiguration._processedSDKConf
-_OBJC_IVAR_$_FTRRTConfiguration._confArray
-_OBJC_IVAR_$_FTRRTConfiguration._bypassRemoteSettings
-_OBJC_IVAR_$_FTRRTConfiguration._sdkState
-l_OBJC_PROTOCOL_$_NSCopying
-l_OBJC_LABEL_PROTOCOL_$_NSCopying
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTConfiguration.m
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTConfiguration.h
 +[FTRNetworkUtils getCurrentCarrier]
 +[FTRNetworkUtils getSimCarrier]
 +[FTRNetworkUtils getSimMcc]
@@ -310,7 +278,6 @@ _ReachabilityCallback
 -[FTRReachability currentReachabilityStatus]
 _OBJC_IVAR_$_FTRReachability._reachabilityRef
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRReachability.m
-PrintReachabilityFlags
 ReachabilityCallback
 +[FTRLogger setLogLevel:]
 +[FTRLogger logLevel]
@@ -344,53 +311,59 @@ ___28+[ForterSDK printSDKVersion]_block_invoke
 +[ForterSDK sharedInstance]
 ___27+[ForterSDK sharedInstance]_block_invoke
 +[ForterSDK setupWithConfig:]
+___29+[ForterSDK setupWithConfig:]_block_invoke
+___copy_helper_block_.39
+___destroy_helper_block_.40
 +[ForterSDK setupWithSiteId:]
+___29+[ForterSDK setupWithSiteId:]_block_invoke
+___copy_helper_block_.46
+___destroy_helper_block_.47
 -[ForterSDK isSDKInInvalidState]
 -[ForterSDK isSDKActive]
--[ForterSDK setupInternallyWithConfiguration:]
-___46-[ForterSDK setupInternallyWithConfiguration:]_block_invoke
-___copy_helper_block_.63
-___destroy_helper_block_.64
+-[ForterSDK setupInternallyWithSiteId:andUserId:andSetupBlock:]
+___63-[ForterSDK setupInternallyWithSiteId:andUserId:andSetupBlock:]_block_invoke
+___copy_helper_block_.56
+___destroy_helper_block_.57
 -[ForterSDK updateConfiguration:]
 ___33-[ForterSDK updateConfiguration:]_block_invoke
-___copy_helper_block_.68
-___destroy_helper_block_.69
+___copy_helper_block_.61
+___destroy_helper_block_.62
 -[ForterSDK setDeviceUniqueIdentifier:]
 ___39-[ForterSDK setDeviceUniqueIdentifier:]_block_invoke
-___copy_helper_block_.75
-___destroy_helper_block_.76
+___copy_helper_block_.68
+___destroy_helper_block_.69
 -[ForterSDK setAccountIdentifier:withType:]
 ___43-[ForterSDK setAccountIdentifier:withType:]_block_invoke
-___copy_helper_block_.80
-___destroy_helper_block_.81
+___copy_helper_block_.73
+___destroy_helper_block_.74
 -[ForterSDK trackNavigation:withType:]
 ___38-[ForterSDK trackNavigation:withType:]_block_invoke
-___copy_helper_block_.85
-___destroy_helper_block_.86
+___copy_helper_block_.78
+___destroy_helper_block_.79
 -[ForterSDK trackNavigation:withType:pageId:pageCategory:otherInfo:]
 ___68-[ForterSDK trackNavigation:withType:pageId:pageCategory:otherInfo:]_block_invoke
-___copy_helper_block_.90
-___destroy_helper_block_.91
+___copy_helper_block_.83
+___destroy_helper_block_.84
 -[ForterSDK trackAction:]
 ___25-[ForterSDK trackAction:]_block_invoke
 -[ForterSDK trackAction:withMessage:]
 ___37-[ForterSDK trackAction:withMessage:]_block_invoke
-___copy_helper_block_.98
-___destroy_helper_block_.99
+___copy_helper_block_.91
+___destroy_helper_block_.92
 -[ForterSDK trackAction:withData:]
 ___34-[ForterSDK trackAction:withData:]_block_invoke
-___copy_helper_block_.103
-___destroy_helper_block_.104
+___copy_helper_block_.96
+___destroy_helper_block_.97
 -[ForterSDK didUpdateLocationLatitude:longitude:altitude:]
 ___58-[ForterSDK didUpdateLocationLatitude:longitude:altitude:]_block_invoke
 -[ForterSDK triggerSubmission]
 ___30-[ForterSDK triggerSubmission]_block_invoke
 -[ForterSDK destroy]
 ___20-[ForterSDK destroy]_block_invoke
-___copy_helper_block_.116
-___destroy_helper_block_.117
--[ForterSDK sendAppActiveEvents:]
-___33-[ForterSDK sendAppActiveEvents:]_block_invoke
+___copy_helper_block_.109
+___destroy_helper_block_.110
+-[ForterSDK sendAppActiveEvents]
+___32-[ForterSDK sendAppActiveEvents]_block_invoke
 +[ForterSDK setDevLogsEnabled:]
 -[ForterSDK serialRequestQueue]
 -[ForterSDK setSerialRequestQueue:]
@@ -400,23 +373,27 @@ ___33-[ForterSDK sendAppActiveEvents:]_block_invoke
 ___block_descriptor_tmp.6
 ___block_descriptor_tmp.18
 ___block_literal_global.19
-___block_descriptor_tmp.65
+___block_descriptor_tmp.41
+___block_descriptor_tmp.48
+___block_descriptor_tmp.58
+___block_descriptor_tmp.63
 ___block_descriptor_tmp.70
-___block_descriptor_tmp.77
-___block_descriptor_tmp.82
-___block_descriptor_tmp.87
-___block_descriptor_tmp.92
-___block_descriptor_tmp.95
-___block_descriptor_tmp.100
-___block_descriptor_tmp.105
-___block_descriptor_tmp.109
-___block_descriptor_tmp.110
-___block_literal_global.111
-___block_descriptor_tmp.118
+___block_descriptor_tmp.75
+___block_descriptor_tmp.80
+___block_descriptor_tmp.85
+___block_descriptor_tmp.88
+___block_descriptor_tmp.93
+___block_descriptor_tmp.98
+___block_descriptor_tmp.102
+___block_descriptor_tmp.103
+___block_literal_global.104
+___block_descriptor_tmp.111
+___block_descriptor_tmp.112
+___block_literal_global.113
 _OBJC_IVAR_$_ForterSDK._serialRequestQueue
 _OBJC_IVAR_$_ForterSDK._sdkState
 /Users/vagrant/git/ForterSDK/ForterSDK/ForterSDK.m
-__33-[ForterSDK sendAppActiveEvents:]_block_invoke
+__32-[ForterSDK sendAppActiveEvents]_block_invoke
 __20-[ForterSDK destroy]_block_invoke
 __30-[ForterSDK triggerSubmission]_block_invoke
 __58-[ForterSDK didUpdateLocationLatitude:longitude:altitude:]_block_invoke
@@ -428,7 +405,9 @@ __38-[ForterSDK trackNavigation:withType:]_block_invoke
 __43-[ForterSDK setAccountIdentifier:withType:]_block_invoke
 __39-[ForterSDK setDeviceUniqueIdentifier:]_block_invoke
 __33-[ForterSDK updateConfiguration:]_block_invoke
-__46-[ForterSDK setupInternallyWithConfiguration:]_block_invoke
+__63-[ForterSDK setupInternallyWithSiteId:andUserId:andSetupBlock:]_block_invoke
+__29+[ForterSDK setupWithSiteId:]_block_invoke
+__29+[ForterSDK setupWithConfig:]_block_invoke
 __27+[ForterSDK sharedInstance]_block_invoke
 __28+[ForterSDK printSDKVersion]_block_invoke
 __24-[ForterSDK runIfValid:]_block_invoke
@@ -451,7 +430,6 @@ _OBJC_IVAR_$_FTREventTrack._trackString
 -[FTREventBase toDictionary]
 -[FTREventBase cacheKey]
 -[FTREventBase cacheData]
--[FTREventBase selfPopulateProperties]
 -[FTREventBase eventType]
 -[FTREventBase setEventType:]
 -[FTREventBase retriesCount]
@@ -479,10 +457,6 @@ l_OBJC_LABEL_PROTOCOL_$_FTREventBase
 /Users/vagrant/git/ForterSDK/ForterSDK/FTREventBase.h
 +[FTRWebViewIntegration getJSCodeForEval]
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRWebViewIntegration.m
-+[FTRRTConfigurationUtils isFeatureEnabledByPriority:]
-+[FTRRTConfigurationUtils nsDictToFeatureFlagsArray:]
-+[FTRRTConfigurationUtils processSDKConfiguration:withRTConfiguration:]
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTConfigurationUtils.m
 +[FTRUtils ftrAccountIdTypeToString:]
 +[FTRUtils ftrNavigationTypeToString:]
 +[FTRUtils ftrActionTypeToString:]
@@ -501,23 +475,21 @@ l_OBJC_LABEL_PROTOCOL_$_FTREventBase
 +[FTRUtils stringToBase64:]
 +[FTRUtils base64ToData:]
 +[FTRUtils base64ToString:]
-+[FTRUtils base64ToHexStringOld:]
 +[FTRUtils base64ToHexString:]
-__NSData_BytesConversionString_
-__HexDigits
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRUtils.m
 -[ForterSDKImpl init]
 +[ForterSDKImpl sharedInstance]
 ___31+[ForterSDKImpl sharedInstance]_block_invoke
-+[ForterSDKImpl setupWithConfig:rtConfiguration:]
--[ForterSDKImpl updateConfiguration:applyingRTConfiguration:]
++[ForterSDKImpl setupWithConfig:]
++[ForterSDKImpl setupWithSiteId:]
+-[ForterSDKImpl updateConfiguration:]
 -[ForterSDKImpl internalInit]
 -[ForterSDKImpl hasValidState]
 -[ForterSDKImpl destroy]
 -[ForterSDKImpl getAssertedUid:exceptionMsg:]
 -[ForterSDKImpl setDeviceUniqueIdentifier:]
 -[ForterSDKImpl setAccountIdentifier:withType:]
--[ForterSDKImpl sendAppActiveEvents:]
+-[ForterSDKImpl sendAppActiveEvents]
 -[ForterSDKImpl trackNavigation:withType:]
 -[ForterSDKImpl trackNavigation:withType:pageId:pageCategory:otherInfo:]
 -[ForterSDKImpl trackAction:]
@@ -525,8 +497,6 @@ ___31+[ForterSDKImpl sharedInstance]_block_invoke
 -[ForterSDKImpl trackAction:withData:]
 -[ForterSDKImpl didUpdateLocationLatitude:longitude:altitude:]
 -[ForterSDKImpl triggerSubmission]
--[ForterSDKImpl rtSDKConfiguration]
--[ForterSDKImpl setRtSDKConfiguration:]
 -[ForterSDKImpl sdkConfiguration]
 -[ForterSDKImpl setSdkConfiguration:]
 -[ForterSDKImpl initiationTimestamp]
@@ -537,41 +507,11 @@ ___31+[ForterSDKImpl sharedInstance]_block_invoke
 _OBJC_IVAR_$_ForterSDKImpl.didSendFirstAppActive
 _OBJC_IVAR_$_ForterSDKImpl._initiationTimestamp
 _sharedInstance.sImplInstance
-_OBJC_IVAR_$_ForterSDKImpl._rtSDKConfiguration
 _OBJC_IVAR_$_ForterSDKImpl._sdkConfiguration
 _OBJC_IVAR_$_ForterSDKImpl._ftrReachability
 /Users/vagrant/git/ForterSDK/ForterSDK/ForterSDKImpl.m
 /Users/vagrant/git/ForterSDK/ForterSDK/ForterSDKImpl.h
 __31+[ForterSDKImpl sharedInstance]_block_invoke
--[FTRRTFeatureFlag copyWithZone:]
--[FTRRTFeatureFlag flagKey]
--[FTRRTFeatureFlag setFlagKey:]
--[FTRRTFeatureFlag flagValue]
--[FTRRTFeatureFlag setFlagValue:]
--[FTRRTFeatureFlag .cxx_destruct]
-_OBJC_IVAR_$_FTRRTFeatureFlag._flagKey
-_OBJC_IVAR_$_FTRRTFeatureFlag._flagValue
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTFeatureFlag.m
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTFeatureFlag.h
--[FTRRTFeature copyWithZone:]
-+[FTRRTFeature initWithServerResponse:]
--[FTRRTFeature isFeatureEnabled]
--[FTRRTFeature isFeatureDisabled]
--[FTRRTFeature featureName]
--[FTRRTFeature setFeatureName:]
--[FTRRTFeature featureType]
--[FTRRTFeature setFeatureType:]
--[FTRRTFeature priority]
--[FTRRTFeature setPriority:]
--[FTRRTFeature keysOverride]
--[FTRRTFeature setKeysOverride:]
--[FTRRTFeature .cxx_destruct]
-_OBJC_IVAR_$_FTRRTFeature._featureName
-_OBJC_IVAR_$_FTRRTFeature._featureType
-_OBJC_IVAR_$_FTRRTFeature._priority
-_OBJC_IVAR_$_FTRRTFeature._keysOverride
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTFeature.m
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTFeature.h
 +[FTRLZString compressLZ:bitsPerChar:withWrapper:]
 +[FTRLZString compressToUriSafe:]
 ___33+[FTRLZString compressToUriSafe:]_block_invoke
@@ -599,51 +539,51 @@ _OBJC_IVAR_$_FTREventNavigation._otherInfo
 /Users/vagrant/git/ForterSDK/ForterSDK/FTREventNavigation.h
 -[FTREventNetwork toDictionary]
 -[FTREventNetwork eventDataDictionary]
--[FTREventNetwork selfPopulateProperties]
 -[FTREventNetwork cacheKey]
 -[FTREventNetwork cacheData]
+-[FTREventNetwork currentNetworkType]
+-[FTREventNetwork setCurrentNetworkType:]
+-[FTREventNetwork currentSSID]
+-[FTREventNetwork setCurrentSSID:]
+-[FTREventNetwork proxy]
+-[FTREventNetwork setProxy:]
+-[FTREventNetwork networkInterfaces]
+-[FTREventNetwork setNetworkInterfaces:]
 -[FTREventNetwork .cxx_destruct]
-_OBJC_IVAR_$_FTREventNetwork.eventData
+_OBJC_IVAR_$_FTREventNetwork._currentNetworkType
+_OBJC_IVAR_$_FTREventNetwork._currentSSID
+_OBJC_IVAR_$_FTREventNetwork._proxy
+_OBJC_IVAR_$_FTREventNetwork._networkInterfaces
 /Users/vagrant/git/ForterSDK/ForterSDK/FTREventNetwork.m
--[FTRRTEventPropertiesOverride init]
-+[FTRRTEventPropertiesOverride initWithFeature:]
--[FTRRTEventPropertiesOverride propertyDisabled:]
--[FTRRTEventPropertiesOverride propertyNotDisabled:]
--[FTRRTEventPropertiesOverride propertyEnabled:]
--[FTRRTEventPropertiesOverride disabledKeys]
--[FTRRTEventPropertiesOverride setDisabledKeys:]
--[FTRRTEventPropertiesOverride enabledKeys]
--[FTRRTEventPropertiesOverride setEnabledKeys:]
--[FTRRTEventPropertiesOverride .cxx_destruct]
-_OBJC_IVAR_$_FTRRTEventPropertiesOverride._disabledKeys
-_OBJC_IVAR_$_FTRRTEventPropertiesOverride._enabledKeys
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTEventPropertiesOverride.m
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRRTEventPropertiesOverride.h
+/Users/vagrant/git/ForterSDK/ForterSDK/FTREventNetwork.h
 -[FTRSDKConfiguration init]
 -[FTRSDKConfiguration copyWithZone:]
--[FTRSDKConfiguration boolFromString:]
--[FTRSDKConfiguration setConfigurationDefaults]
--[FTRSDKConfiguration safeReturnIntegerVal:withDefault:]
--[FTRSDKConfiguration safeReturnBoolVal:withDefault:]
--[FTRSDKConfiguration logLevel]
--[FTRSDKConfiguration eventCachingEnabled]
--[FTRSDKConfiguration eventCacheForSeconds]
--[FTRSDKConfiguration networkExplicitBufferSubmission]
--[FTRSDKConfiguration networkSubmitIntervalSeconds]
--[FTRSDKConfiguration networkMaxRetries]
--[FTRSDKConfiguration networkInitialSocketTimeout]
--[FTRSDKConfiguration networkBackoffMultiplier]
--[FTRSDKConfiguration bufferMaxEvents]
--[FTRSDKConfiguration eventMaxAgeSeconds]
--[FTRSDKConfiguration bufferMaxEventSizeBytes]
--[FTRSDKConfiguration forceGETRequest]
--[FTRSDKConfiguration shouldCompress]
 -[FTRSDKConfiguration siteId]
 -[FTRSDKConfiguration setSiteId:]
 -[FTRSDKConfiguration currentAccountId]
 -[FTRSDKConfiguration setCurrentAccountId:]
 -[FTRSDKConfiguration deviceUid]
 -[FTRSDKConfiguration setDeviceUid:]
+-[FTRSDKConfiguration bufferMaxEvents]
+-[FTRSDKConfiguration setBufferMaxEvents:]
+-[FTRSDKConfiguration bufferMaxEventSizeBytes]
+-[FTRSDKConfiguration setBufferMaxEventSizeBytes:]
+-[FTRSDKConfiguration eventMaxAgeSeconds]
+-[FTRSDKConfiguration setEventMaxAgeSeconds:]
+-[FTRSDKConfiguration networkSubmitIntervalSeconds]
+-[FTRSDKConfiguration setNetworkSubmitIntervalSeconds:]
+-[FTRSDKConfiguration networkMaxRetries]
+-[FTRSDKConfiguration setNetworkMaxRetries:]
+-[FTRSDKConfiguration networkInitialSocketTimeout]
+-[FTRSDKConfiguration setNetworkInitialSocketTimeout:]
+-[FTRSDKConfiguration networkBackoffMultiplier]
+-[FTRSDKConfiguration setNetworkBackoffMultiplier:]
+-[FTRSDKConfiguration eventCacheForSeconds]
+-[FTRSDKConfiguration setEventCacheForSeconds:]
+-[FTRSDKConfiguration eventCachingEnabled]
+-[FTRSDKConfiguration setEventCachingEnabled:]
+-[FTRSDKConfiguration networkExplicitBufferSubmission]
+-[FTRSDKConfiguration setNetworkExplicitBufferSubmission:]
 -[FTRSDKConfiguration isJailbroken]
 -[FTRSDKConfiguration setIsJailbroken:]
 -[FTRSDKConfiguration isFirstRun]
@@ -652,13 +592,26 @@ _OBJC_IVAR_$_FTRRTEventPropertiesOverride._enabledKeys
 -[FTRSDKConfiguration setReferralUrl:]
 -[FTRSDKConfiguration defaultUserAgent]
 -[FTRSDKConfiguration setDefaultUserAgent:]
--[FTRSDKConfiguration fetchRemoteConfiguration]
--[FTRSDKConfiguration setFetchRemoteConfiguration:]
--[FTRSDKConfiguration configurationValues]
--[FTRSDKConfiguration setConfigurationValues:]
+-[FTRSDKConfiguration logLevel]
+-[FTRSDKConfiguration setLogLevel:]
+-[FTRSDKConfiguration forceGETRequest]
+-[FTRSDKConfiguration setForceGETRequest:]
+-[FTRSDKConfiguration shouldCompress]
+-[FTRSDKConfiguration setShouldCompress:]
 -[FTRSDKConfiguration .cxx_destruct]
-_OBJC_IVAR_$_FTRSDKConfiguration._fetchRemoteConfiguration
-_OBJC_IVAR_$_FTRSDKConfiguration._configurationValues
+_OBJC_IVAR_$_FTRSDKConfiguration._logLevel
+_OBJC_IVAR_$_FTRSDKConfiguration._eventCachingEnabled
+_OBJC_IVAR_$_FTRSDKConfiguration._eventCacheForSeconds
+_OBJC_IVAR_$_FTRSDKConfiguration._networkExplicitBufferSubmission
+_OBJC_IVAR_$_FTRSDKConfiguration._networkSubmitIntervalSeconds
+_OBJC_IVAR_$_FTRSDKConfiguration._networkMaxRetries
+_OBJC_IVAR_$_FTRSDKConfiguration._networkInitialSocketTimeout
+_OBJC_IVAR_$_FTRSDKConfiguration._networkBackoffMultiplier
+_OBJC_IVAR_$_FTRSDKConfiguration._bufferMaxEvents
+_OBJC_IVAR_$_FTRSDKConfiguration._eventMaxAgeSeconds
+_OBJC_IVAR_$_FTRSDKConfiguration._bufferMaxEventSizeBytes
+_OBJC_IVAR_$_FTRSDKConfiguration._forceGETRequest
+_OBJC_IVAR_$_FTRSDKConfiguration._shouldCompress
 _OBJC_IVAR_$_FTRSDKConfiguration._siteId
 _OBJC_IVAR_$_FTRSDKConfiguration._currentAccountId
 _OBJC_IVAR_$_FTRSDKConfiguration._deviceUid
@@ -666,10 +619,11 @@ _OBJC_IVAR_$_FTRSDKConfiguration._isJailbroken
 _OBJC_IVAR_$_FTRSDKConfiguration._isFirstRun
 _OBJC_IVAR_$_FTRSDKConfiguration._referralUrl
 _OBJC_IVAR_$_FTRSDKConfiguration._defaultUserAgent
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRSDKConfiguration.m
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRSDKConfiguration.h
 -[FTRConfigurationFetcher fetch:userId:]
--[FTRConfigurationFetcher getFailureRTConfiguration]
 -[FTRConfigurationFetcher fetch:userId:retryCount:]
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
@@ -732,36 +686,6 @@ _OBJC_IVAR_$_FTRAccountIds._accountIds
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRAccountIds.m
 /Users/vagrant/git/ForterSDK/ForterSDK/FTRAccountIds.h
 __31+[FTRAccountIds sharedInstance]_block_invoke
-+[FTRXrayFeature sharedInstance]
-___32+[FTRXrayFeature sharedInstance]_block_invoke
--[FTRXrayFeature run]
--[FTRXrayFeature contentKeySession:didProvideContentKeyRequest:]
-___64-[FTRXrayFeature contentKeySession:didProvideContentKeyRequest:]_block_invoke
--[FTRXrayFeature resourceLoader:shouldWaitForLoadingOfRequestedResource:]
--[FTRXrayFeature startAVPlayer]
-+[FTRXrayFeature getXrayCert]
--[FTRXrayFeature sendXrayOk:]
-___29-[FTRXrayFeature sendXrayOk:]_block_invoke
--[FTRXrayFeature rsaEncrypt:]
--[FTRXrayFeature serialAVQueue]
--[FTRXrayFeature setSerialAVQueue:]
--[FTRXrayFeature xrayCert]
--[FTRXrayFeature setXrayCert:]
--[FTRXrayFeature .cxx_destruct]
-___block_descriptor_tmp.46
-___block_descriptor_tmp.137
-___block_literal_global.138
-_OBJC_IVAR_$_FTRXrayFeature._serialAVQueue
-_OBJC_IVAR_$_FTRXrayFeature._xrayCert
-l_OBJC_PROTOCOL_$_AVContentKeySessionDelegate
-l_OBJC_LABEL_PROTOCOL_$_AVContentKeySessionDelegate
-l_OBJC_PROTOCOL_$_AVAssetResourceLoaderDelegate
-l_OBJC_LABEL_PROTOCOL_$_AVAssetResourceLoaderDelegate
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRXrayFeature.m
-/Users/vagrant/git/ForterSDK/ForterSDK/FTRXrayFeature.h
-__29-[FTRXrayFeature sendXrayOk:]_block_invoke
-__64-[FTRXrayFeature contentKeySession:didProvideContentKeyRequest:]_block_invoke
-__32+[FTRXrayFeature sharedInstance]_block_invoke
 /Users/vagrant/Library/Developer/Xcode/DerivedData/ForterSDK-fjayunxlraeyumctninbvbdqaulu/Build/Intermediates.noindex/ArchiveIntermediates/ForterSDK/IntermediateBuildFilesPath/ForterSDK.build/Release-iphoneos/ForterSDK.build/DerivedSources/ForterSDK_vers.c
 __ZL15__ARCLite__loadv
 __ZL30add_image_hook_autoreleasepoolPK11mach_headerl
@@ -867,7 +791,7 @@ __ZL25original_protocol_getName
 __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -mlinker-version=409.12 -march=armv7a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.o -mlinker-version=409.12 -march=armv7s
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70
 fixStringForCoreData
