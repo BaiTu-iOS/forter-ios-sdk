@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v2.0.0",
+  "iOS" : [
+    {
+      "name" : "ForterSDK",
+      "hash" : "cb0118a5a4591ab2d0ed57ff31cc5662fbee9be3082623abf23acf64973887f7"
+    }
+  ]
+}
