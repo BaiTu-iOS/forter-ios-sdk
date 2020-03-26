@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => "Commercial", :text => "Forter LTD Copyright 2016-2020" }
   s.author           = { "Forter Tech Research & Growth Engineering" => "mobile@forter.com" }
   s.source           = { :git => "https://bitbucket.org/forter-mobile/forter-ios-sdk.git", :tag => s.version.to_s }
-  s.frameworks 	     = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
+  s.frameworks       = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
   s.static_framework = true
   s.prefix_header_file = false
   s.ios.deployment_target = '8.0'
@@ -18,10 +18,15 @@ Pod::Spec.new do |s|
   s.ios.vendored_library = 'Carthage/Build/iOS/libForterSDK-2.1.3-61.a' 
   s.ios.source_files = 'Carthage/Build/iOS/ForterSDK.framework/Headers/*.h'
   s.ios.public_header_files = 'Carthage/Build/iOS/ForterSDK.framework/Headers/*.h'
+  s.preserve_path = 'Carthage/Build/iOS/ForterSDK.framework/Modules/module.modulemap'
+  s.module_map = 'Carthage/Build/iOS/ForterSDK.framework/Modules/module.modulemap'
   s.xcconfig = {
     'HEADER_SEARCH_PATHS' =>
     "\"${PODS_TARGET_SRCROOT}\" " +
-    "\"${PODS_TARGET_SRCROOT}/Carthage/Build/iOS/ForterSDK.framework/Headers/*.h\""
+    "\"${PODS_TARGET_SRCROOT}/Carthage/Build/iOS/ForterSDK.framework/Headers/*.h\" " +
+    "\"${PODS_TARGET_SRCROOT}/Carthage/Build/iOS/ForterSDK.framework/Modules\" " +
+    "\"$(PODS_ROOT)/ForterSDKstatic/Carthage/Build/iOS/ForterSDK.framework/Headers/*.h\" " +
+    "\"$(PODS_ROOT)/ForterSDKstatic//Carthage/Build/iOS/ForterSDK.framework/Modules\" "
   }
     
 end
