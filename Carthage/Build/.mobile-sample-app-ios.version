@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "rugatkins-latest",
+  "iOS" : [
+    {
+      "name" : "ForterSDK",
+      "hash" : "f78c658a7ae6cc41a6ca1592227ff30b996bc743aed338d322466246ff5a0068"
+    }
+  ]
+}
