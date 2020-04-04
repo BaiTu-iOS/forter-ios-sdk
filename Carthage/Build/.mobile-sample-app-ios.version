@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "5721f75fc7235354208a944f9ce74edfc53e91b5",
+  "commitish" : "rugatkins-latest",
   "iOS" : [
     {
       "name" : "ForterSDK",
-      "hash" : "78c8affaba15e5adb2de9c9c6caa96221256b96c957f7e8fc159286fa856fdde"
+      "hash" : "f78c658a7ae6cc41a6ca1592227ff30b996bc743aed338d322466246ff5a0068"
     }
   ]
 }
