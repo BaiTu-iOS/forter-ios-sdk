@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ForterSDK"
-  s.version          = "2.1.3"
+  s.version          = "2.1.4"
   s.summary          = "ForterSDK - Forter iOS SDK"
   s.description      = <<-DESC
                         Forter's iOS Fraud Prevention SDK 
@@ -26,10 +26,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'Static' do |sp|
     sp.prefix_header_file = false
-    sp.ios.vendored_library = 'Static/libForterSDK-2.1.3-61.a' 
+    sp.ios.vendored_library = 'Static/libForterSDK-2.1.4-62.a' 
     sp.ios.source_files = 'Static/Headers/*.h'
     sp.ios.public_header_files = 'Static/Headers/*.h'
-    sp.preserve_path = 'module.modulemap', 'Static/libForterSDK-2.1.3-61.a'
+    sp.preserve_path = 'module.modulemap', 'Static/libForterSDK-2.1.4-62.a'
     sp.xcconfig = {
       'HEADER_SEARCH_PATHS' =>
       "\"${PODS_TARGET_SRCROOT}\/Static\" " +
