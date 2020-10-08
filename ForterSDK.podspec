@@ -26,9 +26,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'Static' do |sp|
     sp.prefix_header_file = false
-    sp.ios.vendored_framework = package["static"]["framework"]
-    sp.ios.source_files = "#{package["static"]["framework"]}/Headers/*.h"
-    sp.ios.public_header_files = "#{package["static"]["framework"]}/Headers/*.h"
+    sp.ios.vendored_framework = package["static"]["framework"]["path"]
+    sp.ios.source_files = "#{package["static"]["framework"]["path"]}/Headers/*.h"
+    sp.ios.public_header_files = "#{package["static"]["framework"]["path"]}/Headers/*.h"
     # sp.preserve_path = 'module.modulemap', 'Static/ForterSDK.framework'
     sp.xcconfig = {
       'HEADER_SEARCH_PATHS' =>
@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'StaticLib' do |sp|
-    sp.ios.vendored_library = package["static"]["lib"]
-    sp.ios.source_files = "#{package["static"]["framework"]}/Headers/*.h"
-    sp.ios.public_header_files = "#{package["static"]["framework"]}/Headers/*.h"
+    sp.ios.vendored_library = package["static"]["lib"]["path"]
+    sp.ios.source_files = package["static"]["lib"]["headers"]
+    sp.ios.public_header_files = package["static"]["lib"]["headers"]
   end
 end
