@@ -1,0 +1,16 @@
+{
+	"name": "ForterSDK",
+	"version": "2.1.5",
+	"summary": "ForterSDK - Forter iOS SDK",
+	"description": "Forter's iOS Fraud Prevention SDK ",
+	"homepage": "https://www.forter.com",
+	"license": "{ \\:type => \"Commercial\", :text => \"Forter LTD Copyright 2016-2020\" }",
+	"author": "{ \"Forter Tech Research & Growth Engineering\" => \"mobile@forter.com\" }",
+	"dynamic": {
+		"framework": "Dynamic/ForterSDK.framework"
+	},
+	"static": {
+		"lib": "Static/libForterSDK-2.1.5-63.a",
+		"framework":"Static/ForterSDK.framework"
+	}
+}
