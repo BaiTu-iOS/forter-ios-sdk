@@ -10,7 +10,7 @@
 		"framework": "Dynamic/ForterSDK.framework"
 	},
 	"static": {
-		"lib": "Static/libForterSDK-2.1.5-63.a",
+		"lib": "libForterSDK-2.1.5-63.a",
 		"framework":"Static/ForterSDK.framework"
 	}
 }
