@@ -1,6 +1,4 @@
-framework module ForterSDK {
-  umbrella header "ForterSDK.h"
-
-  export *
-  module * { export * }
+module ForterSDK {
+    umbrella header "ForterSDK-umbrella.h"
+    export *
 }
