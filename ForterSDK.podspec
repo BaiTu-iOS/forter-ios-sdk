@@ -42,5 +42,11 @@ Pod::Spec.new do |s|
     sp.ios.vendored_library = package["static"]["lib"]["path"]
     sp.ios.source_files = package["static"]["lib"]["headers"]
     sp.ios.public_header_files = package["static"]["lib"]["headers"]
+    sp.xcconfig = {
+      'HEADER_SEARCH_PATHS' =>
+      "\"${PODS_TARGET_SRCROOT}\/Static\" " +
+      "\"${PODS_TARGET_SRCROOT}/Static/Headers/*.h\" " +
+      "\"$(PODS_ROOT)/ForterSDK/Static/Headers/*.h\" " 
+    }
   end
 end
