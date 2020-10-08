@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
-  s.module_map = 'module.modulemap'
+  # s.module_map = 'module.modulemap'
   s.default_subspec = 'Dynamic'
 
   s.subspec 'Dynamic' do |sp|
