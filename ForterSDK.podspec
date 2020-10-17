@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
-  # s.module_map = 'module.modulemap'
+  s.module_map = 'module.modulemap'
   s.default_subspec = 'Dynamic'
 
   s.subspec 'Dynamic' do |sp|
@@ -35,6 +35,7 @@ Pod::Spec.new do |s|
       "\"${PODS_TARGET_SRCROOT}\/Static\" " +
       "\"${PODS_TARGET_SRCROOT}/Static/Headers/*.h\" " +
       "\"$(PODS_ROOT)/ForterSDK/Static/Headers/*.h\" " 
+      # 'DEFINES_MODULE' => 'YES'
     }
   end
 
@@ -47,6 +48,7 @@ Pod::Spec.new do |s|
       "\"${PODS_TARGET_SRCROOT}\/Static\" " +
       "\"${PODS_TARGET_SRCROOT}/Static/Headers/*.h\" " +
       "\"$(PODS_ROOT)/ForterSDK/Static/Headers/*.h\" " 
+      # 'DEFINES_MODULE' => 'YES'
     }
   end
 end

@@ -1,4 +1,0 @@
-module ForterSDK {
-    umbrella header "ForterSDK-umbrella.h"
-    export *
-}

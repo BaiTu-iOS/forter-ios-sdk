@@ -1,6 +1,0 @@
-#import "ForterSDK.h"
-#import "FTRSDKApplicationDelegate.h"
-#import "FTRSDKConfiguration.h"
-#import "FTRSDKConfigurationKeys.h"
-#import "FTRSDKPublicConstants.h"
-#import "FTRWebViewIntegration.h"
