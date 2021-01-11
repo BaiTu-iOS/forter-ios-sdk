@@ -9,10 +9,7 @@ let package = Package(
   products: [
     .library(
       name: "ForterSDK",
-      targets: ["ForterSDK"]),
-    .library(
-      name: "ForterSDKStatic",
-      targets: ["ForterSDKStatic"])
+      targets: ["ForterSDK", "ForterSDKStatic"])
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
