@@ -7,9 +7,8 @@ let package = Package(
     .iOS(.v10)
   ],
   products: [
-    .library(
-      name: "ForterSDK",
-      targets: ["ForterSDK", "ForterSDKStatic"])
+    .library(name: "ForterSDK", type: .dynamic, targets: ["ForterSDK"]),
+    .library(name: "ForterSDKStatic", type: .static, targets: ["ForterSDKStatic"])
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
