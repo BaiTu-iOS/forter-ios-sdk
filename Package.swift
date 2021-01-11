@@ -20,11 +20,11 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "ForterSDK",
-      path: "SDK/xcframeworks/dynamic/Forter3DS.xcframework"
+      path: "SDK/xcframeworks/dynamic/ForterSDK.xcframework"
     ),
     .binaryTarget(
       name: "ForterSDKStatic",
-      path: "SDK/xcframeworks/static/Forter3DS.xcframework"
+      path: "SDK/xcframeworks/static/ForterSDK.xcframework"
     )
   ]
 )
