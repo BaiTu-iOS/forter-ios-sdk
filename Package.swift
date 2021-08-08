@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "Forter3DS",
+  name: "ForterSDK",
   platforms: [
     .iOS(.v10)
   ],
