@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ForterSDK"
-  s.version          = "2.1.5"
+  s.version          = "2.2.0"
   s.summary          = "ForterSDK - Forter iOS SDK"
   s.description      = <<-DESC
                         Forter's iOS Fraud Prevention SDK 
@@ -12,27 +12,9 @@ Pod::Spec.new do |s|
   s.frameworks 	     = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
-  s.default_subspec = 'Dynamic'
 
-  #dynamic framework
-  s.subspec 'Dynamic' do |sp|
-    sp.ios.vendored_framework = 'SDK/xcframeworks/dynamic/ForterSDK.xcframework'
-    sp.ios.source_files = 'SDK/Headers/*.h'
-    sp.ios.public_header_files = 'SDK/Headers/*.h'
-  end
+  s.ios.vendored_framework = 'SDK/ForterSDK.xcframework'
+  s.ios.source_files = 'SDK/Headers/*.h'
+  s.ios.public_header_files = 'SDK/Headers/*.h'
 
-  # static framework
-  s.subspec 'Static' do |sp|
-    sp.ios.vendored_framework = 'SDK/xcframeworks/static/ForterSDK.xcframework'
-    sp.ios.source_files = 'SDK/Headers/*.h'
-    sp.ios.public_header_files = 'SDK/Headers/*.h'
-  end
-
-  # static lib
-  s.subspec 'StaticLib' do |sp| 
-    sp.prefix_header_file = false
-    sp.ios.vendored_library = 'SDK/libForterSDK-2.1.5-63.a'
-    sp.source_files = 'SDK/Headers/*.h'
-    sp.public_header_files = 'SDK/Headers/*.h'
-  end
 end
