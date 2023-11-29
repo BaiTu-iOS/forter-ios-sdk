@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/FTRSDKPublicConstants.h</key>
 		<data>
-		IqSu0NS0qKwaoxitP63V6a26z98=
+		48qtqMQHhiB6jRIl0ZCrgIYG5bA=
 		</data>
 		<key>Headers/FTRWebViewIntegration.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lyHOrQeFDGJzSkVumg3g0zt4L4c=
+		UqfSZRzEipBh0Uh/ik/MeuNEyd0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IqSu0NS0qKwaoxitP63V6a26z98=
+			48qtqMQHhiB6jRIl0ZCrgIYG5bA=
 			</data>
 			<key>hash2</key>
 			<data>
-			CvjXlhed4AOhIz0j21ALQgzpi1FRu4vbQ0jIlGG2nQ8=
+			BV769qhDSeg2C7gi/pcclfv+8GogZgfyuQnm+4z1/R8=
 			</data>
 		</dict>
 		<key>Headers/FTRWebViewIntegration.h</key>
