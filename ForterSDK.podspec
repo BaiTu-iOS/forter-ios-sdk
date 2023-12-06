@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://www.forter.com"
   s.license          = { :type => "Commercial", :text => "Forter LTD Copyright 2016-2023" }
   s.author           = { "Forter Tech Research & Growth Engineering" => "mobile@forter.com" }
-  s.source           = { :git => "https://bitbucket.org/forter-mobile/forter-ios-sdk.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/BaiTu-iOS/forter-ios-sdk.git", :tag => s.version.to_s }
   s.frameworks 	     = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
   s.ios.deployment_target = '10.0'
   s.ios.vendored_framework = 'SDK/ForterSDK.xcframework'
